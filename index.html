@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+    <title>HAMBURGER YAPIMI </title>
+</head>
+
+<body>
+    <h2 class="text-center">Hamburger Yapımı</h2>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-lg-4 float-center">
+
+            <div class="col-lg-6">
+                <div class="form-check">
+                    <input id="marul" class="form-check-input" name="marul" type="checkbox" value="marul">
+
+                    <label class="form-check-label">Marul</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="paketSos" class="form-check-input" type="checkbox" value="paketSos">
+                    <label class="form-check-label">Paket Sos</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="sogan" class="form-check-input" type="checkbox" value="sogan">
+                    <label class="form-check-label">Soğan</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="tursu" class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Turşu</label>
+                </div>
+
+
+
+                <div class="form-check">
+                    <input id="domates" class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Domates</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="ekmek" class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Ekmek</label>
+                </div>
+
+                <div class="form-check">
+                    <input id="patates" class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Patates </label>
+                </div>
+
+                <div class="form-check">
+                    <input id="kola" class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Kola</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8">
+            <p id="siparisEkrani"> SİPARİŞ EKRANI</p>
+
+            <div>
+                <div class="form-check">
+                    <input id="step11" class="form-check-input" type="checkbox">
+                    <label id="step1" class="form-check-label">1.Step</label>
+                </div>
+                <div class="form-check">
+                    <input id="step22" class="form-check-input" type="checkbox">
+                    <label id="step2" class="form-check-label">2.Step</label>
+                </div>
+                <div class="form-check">
+                    <input id="step33" class="form-check-input" type="checkbox">
+                    <label id="step3" class="form-check-label">3.Step</label>
+                </div>
+                <div class="form-check">
+                    <input id="step44" class="form-check-input" type="checkbox">
+                    <label id="step4" class="form-check-label">4.Step</label>
+                </div>
+                <div class="form-check">
+                    <input id="step55" class="form-check-input" type="checkbox">
+                    <label id="step5" class="form-check-label">5.Step</label>
+                </div>
+                <div class="form-check">
+                    <input onclick="" id="step66" class="form-check-input" type="checkbox">
+                    <label id="step6" class="form-check-label">6.Step</label>
+                </div>
+                <div class="form-check">
+                    <input id="step77" class="form-check-input" type="checkbox">
+                    <label id="step7" class="form-check-label">7.Step</label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="float-center">
+        <button class="btn btn-primary" onclick="siparisAl()">SİPARİŞ AL </button>
+
+    </div>
+    <br>
+    <br>
+
+    <div class="float-center " id="kofteAndTavuk" style="display: none;">
+        <input onclick="ucDortBes()" type="radio" id="buttonTavukId" name="tavukRadio" value="huey">
+        <label id="tavukYazi" for="huey">Tavuk mu?</label>
+        <input onclick="ucDortBes()" type="radio" id="buttonkofteId" name="kofteRadio" value="huey">
+        <label id="kofteYazi" for="huey">Köfte mi?</label>
+    </div>
+
+    <div id="pisirmeSecenekler" style="display: none;">
+        <input onclick="azPismisKofte()" type="radio" id="azPismis" name="azPismis" value="huey">
+        <label for="huey">Az Pişmiş</label>
+        <input onclick="ortaPismisKofte()" type="radio" id="ortaPismis" name="ortaPismis" value="huey">
+        <label for="huey">Orta Pişmiş</label>
+        <input onclick="cokPismisKofte()" type="radio" id="cokPismis" name="cokPismis" value="huey">
+        <label for="huey">Çok Pişmiş</label>
+    </div>
+
+</body>
+
+
+
+</html>
